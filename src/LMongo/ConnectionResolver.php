@@ -1,6 +1,6 @@
 <?php namespace LMongo;
 
-class ConnectionResolver implements ConnectionResolverInterface {
+class ConnectionResolver implements \Illuminate\Database\ConnectionResolverInterface {
 
 	/**
 	 * All of the registered connections.

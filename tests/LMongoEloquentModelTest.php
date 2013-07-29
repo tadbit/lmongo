@@ -219,7 +219,7 @@ class LMongoEloquentModelTest extends PHPUnit_Framework_TestCase {
 			'updated_at' => new DateTime
 		);
 		$model = new LMongoDateModelStub;
-		LMongo\Eloquent\Model::setConnectionResolver($resolver = m::mock('LMongo\ConnectionResolverInterface'));
+		LMongo\Eloquent\Model::setConnectionResolver($resolver = m::mock('Illuminate\Database\ConnectionResolverInterface'));
 		$resolver->shouldReceive('connection')->andReturn($mockConnection = m::mock('LMongo\Connection'));
 		$instance = $model->newInstance($timestamps);
 		$this->assertInstanceOf('Carbon\Carbon', $instance->updated_at);
@@ -234,7 +234,7 @@ class LMongoEloquentModelTest extends PHPUnit_Framework_TestCase {
 			'updated_at' => new DateTime
 		);
 		$model = new LMongoDateModelStub;
-		LMongo\Eloquent\Model::setConnectionResolver($resolver = m::mock('LMongo\ConnectionResolverInterface'));
+		LMongo\Eloquent\Model::setConnectionResolver($resolver = m::mock('Illuminate\Database\ConnectionResolverInterface'));
 		$resolver->shouldReceive('connection')->andReturn($mockConnection = m::mock('LMongo\Connection'));
 		$instance = $model->newInstance($timestamps);
 

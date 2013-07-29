@@ -14,7 +14,7 @@ use LMongo\Eloquent\Relations\MorphMany;
 use LMongo\Eloquent\Relations\BelongsTo;
 use LMongo\Eloquent\Relations\BelongsToMany;
 use LMongo\Query\Builder as QueryBuilder;
-use LMongo\ConnectionResolverInterface as Resolver;
+use Illuminate\Database\ConnectionResolverInterface as Resolver;
 use Illuminate\Support\Contracts\JsonableInterface;
 use Illuminate\Support\Contracts\ArrayableInterface;
 use Illuminate\Events\Dispatcher;

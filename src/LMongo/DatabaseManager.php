@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Manager;
 
-class DatabaseManager implements ConnectionResolverInterface {
+class DatabaseManager implements \Illuminate\Database\ConnectionResolverInterface {
 
 	/**
 	 * The application instance.
